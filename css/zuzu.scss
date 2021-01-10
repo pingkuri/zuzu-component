@@ -26,11 +26,14 @@
 
 .zuzu__input__lock {
     @extend .zuzu__input;
+    pointer-events: none;
     background-color: #EAEDF5;
 }
 
 .zuzu__input:focus{
-    border: 1px solid #80DBEE;
+    background-color: #FFFFFF;
+    border: 2px solid #4C9EFF;
+    border-radius: 0.3rem;
 }
 
 
@@ -84,6 +87,38 @@
 .zuzu__btn:hover {
     background-color: #0069D9;
 }
+
+
+/* switch */
+
+.zuzu__switch{
+    display: flex;
+    align-items: center;
+    width: 70px;
+    height: 35px;
+    background-color: #B3C4FF;
+    border-radius: 3rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+}
+
+.zuzu__switch__on{
+    @extend .zuzu__switch;
+    justify-content: flex-end;
+    background-color: #007BEE;
+}
+
+
+
+.zuzu__switch__power{
+    width: 25px;
+    height: 25px;
+    border-radius: 3rem;
+    margin: 0 6px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
 
 
 @include mobile{

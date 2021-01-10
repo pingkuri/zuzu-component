@@ -1,0 +1,74 @@
+
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* color */
+
+$color-primary : #FF9D72;
+$color-accent : #FFAA38;
+$color-btn : #ffff;
+
+
+/* background-color */
+
+$background-color-primary : #EAEDF5;
+$background-color-content : #ffff;
+$background-color-btn : #ffff;
+$background-color-checkbox : #ffff;
+$background-color-radiobtn : #ffff;
+$background-color-body : #F6F6F9;
+$background-color-content : #ffff;
+
+/* font */
+
+$font-primary :'GmarketSansMedium';
+ 
+/* font-size */
+
+$font-size-title : 30px;
+$font-size-menu : 30px;
+$font-size-btn : 30px;
+
+/* font-weight */
+$font-weight-title : 900;
+$font-weight-btn : 700;
+
+/* border-radius */
+
+$border-radius-content : 0.5rem;
+$border-radius-btn : 1rem;
+
+/* box-shadow */
+
+$box-shadow-content : 0 4px 12px 0 rgba(25, 49, 146, 0.14);
+$box-shadow-btn : 1.5px 1.5px 1.5px 1.5px rgba(0,0,0,0.25);
+
+/* responsive  */
+
+$breakpoint-mobile: 335px;
+$breakpoint-tablet: 758px;
+$breakpoint-desktop: 1025px;
+
+@mixin mobile {
+    @media (max-width: #{$breakpoint-tablet - 1px}) {
+      @content;
+    }
+  }
+  
+  @mixin tablet {
+    @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px}) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media (min-width: #{$breakpoint-desktop}) {
+      @content;
+    }
+  }
+
+  /*  */

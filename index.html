@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="zuzu.css">
+    <link rel="stylesheet" href="css/zuzu.css">
+    <link rel="stylesheet" href="css/all.css">
     <title>Document</title>
 </head>
 
@@ -12,12 +13,10 @@
     * {
         margin: 0;
         padding: 0;
+        /*  background-color: #EAEDF5; */
     }
 
-    #container {
-        width: 500px;
-        margin: 0 auto;
-    }
+
 
     .item {
         margin-top: 20px;
@@ -27,10 +26,38 @@
 
 <body>
     <div id="container">
+
         <div class="item zuzu__btn">
             .zuzu__btn
         </div>
+
+        <div class="item zuzu__btn__disabled">
+            .zuzu__btn__disabled
+        </div>
+
+
+        <div style="margin: 0 auto; display: flex; justify-content: center; align-items: center;">
+            <div class="item zuzu__checkbox ">
+                <i class="fas fa-check"></i>
+            </div>
+            <div>&nbsp;&nbsp;.zuzu__checkbox</div>
+        </div>
+
+
+
+
+        <div style="margin: 0 auto; display: flex; justify-content: center; align-items: center;">
+            <div class="item zuzu__checkbox__checked">
+                <i class="fas fa-check"></i>
+            </div>
+            <div>&nbsp;&nbsp;.zuzu__checkbox__checked</div>
+        </div>
+
+
+        <input type="text" class="item zuzu__input" placeholder=".zuzu__input">
+
         <input type="text" class="item zuzu__input__lock" placeholder=".zuzu__input__lock">
+
     </div>
 
 </body>

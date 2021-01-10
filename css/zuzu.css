@@ -31,6 +31,8 @@
   text-indent: 1rem;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .zuzu__input__lock {
@@ -131,6 +133,48 @@
   background-color: #ffffff;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* radio */
+.zuzu__radio, .zuzu__radio__checked {
+  width: 20px;
+  height: 20px;
+  border: 3px solid lightgray;
+  border-radius: 3rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+.zuzu__radio__checked {
+  border: 5px solid #007BEE;
+}
+
+/* selectbox */
+.zuzu__selectbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  height: 50px;
+  margin-left: 30%;
+  color: #585858;
+  background-color: #FFFFFF;
+  border: 3px solid darkgray;
+  border-radius: 0.5rem;
+  text-indent: 1rem;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding-right: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.zuzu__selectbox__arrow {
+  margin: 0 0 0 auto;
 }
 
 @media (max-width: 757px) {

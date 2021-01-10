@@ -1,4 +1,9 @@
 .zuzu__input__lock {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
     text-indent: 1rem;
     font-size: 0.8rem;
     background-color: #FBFBFB;

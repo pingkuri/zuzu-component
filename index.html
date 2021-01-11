@@ -79,10 +79,24 @@
             <div>&nbsp;&nbsp;.zuzu__radio__checked</div>
         </div>
 
-        <div class="item zuzu__selectbox">
-            .zuzu__selectbox
+        <div class="item zuzu__selectbox" onclick="event.stopPropagation();clickSelectbox(this)">
+            <div class="zuzu__selectbox__selected">.zuzu__selectbox</div>
+            <div class="zuzu__selectbox__selection">
+                <div class="zuzu__selectbox__selection__item" onclick="clickSelectboxItem(this)">서울</div>
+                <div class="zuzu__selectbox__selection__item" onclick="clickSelectboxItem(this)">부산</div>
+                <div class="zuzu__selectbox__selection__item" onclick="clickSelectboxItem(this)">대전</div>
+            </div>
             <i class="fas fa-caret-down zuzu__selectbox__arrow"></i>
         </div>
+
+
+
+        <!-- <div class="item zuzu__selectbox__opened">
+            .zuzu__selectbox
+            <i class="fas fa-caret-down zuzu__selectbox__arrow"></i>
+        </div> -->
+
+
 
         <input type="text" class="item zuzu__input" placeholder=".zuzu__input">
 
